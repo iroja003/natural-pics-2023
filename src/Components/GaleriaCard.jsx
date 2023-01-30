@@ -21,7 +21,7 @@ const GaleriaCard = ({info, favori }) => {
          favori ?
           <Button className='btn-primary' onClick={ () =>{ delFavorito(info.id) }} >Delete Favoritos</Button>
           :
-          <Button className='btn-primary' onClick={ () =>{ addFavorito(info) }} >Add Favoritos</Button>
+          <Button className='btn-primary' disabled={favoritos.some((f) => f.id == info.id)} onClick={ () =>{ addFavorito(info) }} >Add Favoritos</Button>
         }  
     </Card>
   );
