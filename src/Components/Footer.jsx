@@ -1,7 +1,6 @@
-import React from 'react'
-import { Container,Row, Col } from 'react-bootstrap'
+import React from 'react';
+import { Container,Row, Col } from 'react-bootstrap';
 
-// className='text-center py-3 bg-success w-auto'
 
 const Footer = () => {
   return (
